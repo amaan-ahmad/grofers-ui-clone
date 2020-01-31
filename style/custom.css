@@ -1,0 +1,410 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-------------------------------header starts--------------------------------------------*/
+.nav-bar{
+    display: flex;
+    font-size: medium;
+    font-family: "Segoe UI Light", sans-serif;
+    background-color: rgba(28,34,36,.8);
+    width: 100%;
+    height: fit-content;
+}
+.nav-item span{
+    text-align: center;
+    font-size: small;
+}
+.nav-logo img{
+    width: 36px;
+    height: 36px;
+    padding: 1rem 2rem;
+}
+
+.nav-logo{
+    border-style: none solid none none;
+    border-color: gray;
+    border-width: 1px;
+}
+.nav-item:hover{
+    background-color: #273032;
+}
+
+.nav-item{
+    padding: 1em 1em;
+    display: inline;
+    width:100%;
+    color: whitesmoke;
+    margin : 0 1.5em;
+}
+
+.search-icon img{
+    width: 32px;
+    height: 32px;
+    display: inline;
+    cursor: pointer;
+    background-size: 100% 100%;
+    position: absolute;
+    top:1.2em;
+    left : 95%;
+    align-content: end;
+}
+
+.search{
+    background-color: white;
+    color: slategrey;
+    padding: 1em 1em;
+    border-radius: 0.2rem;
+    border-style: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.search-bar{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+.nav-city{
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.nav-city span::before{
+
+    content: "";
+    background-image:url('../images/place-marker.png.png');
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 25px;
+    width:25px;
+    position:relative;
+    top:5px;
+
+    }
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.nav-city i , .login-btn i{
+    margin-left: 0.5rem;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.login-btn{
+    width: fit-content;
+    height: fit-content;
+    white-space: nowrap;
+}
+.login-btn span{
+    float: left;
+}
+
+.cart-item span{
+    font-size: 1em;
+}
+.cart-item{
+    border-style: none none none solid;
+    display: inline-block;
+    border-width: 0 0 0 1px;
+    border-color: gray;
+    white-space: nowrap;
+    width: fit-content;
+    height: fit-content;
+}
+.cart-item img{
+    width: 36px;
+    height: 32px;
+}
+
+/* -------------------------------header ends--------------------------------------*/
+
+/* -------------------------------main body ---------------------------------------*/
+
+.main-body{
+    padding: 0.4rem 7%;
+    margin: 0;
+    background-color: #eee;
+    height: fit-content;
+}
+
+.banner img{
+    width: 100%;
+}
+.ad-section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.slides-container{
+    display: block;
+    width: auto;
+    height: fit-content;
+    background-color: white;
+    padding: 0 1.5em;
+    overflow: hidden;
+    position: relative;
+}
+.circle-left, .circle-right{
+    z-index: 9;
+    padding: 0.8rem;
+    background-color: lightgray;
+    border-radius: 100%;
+    width: fit-content;
+    height: fit-content;
+    position:absolute;
+    left:auto;
+    top:45%;
+    display: block;
+    align-items: center;
+}
+.arrow-left , .arrow-right{
+    z-index: 10;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    border-width: 0 0 2px 2px;
+    border-radius: 15%;
+    border-style:solid;
+    border-color: whitesmoke;
+    transform: rotate(45deg);
+}
+.arrow-left{
+    margin-left: 0.2rem;
+}
+.arrow-right{
+    transform: rotate(225deg);
+    margin-right: 0.2rem;
+
+}
+.circle-right{
+    left:95%;
+    top:45%;
+}
+.slide-card-parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*display: grid;*/
+    /*grid-template-columns: auto auto auto auto auto auto auto auto;*/
+    /*margin-bottom: 0.5rem;*/
+    max-width: 90%;
+    height: auto;
+    padding: 1.5em;
+    background-color: white;
+    overflow: auto;
+}
+
+.slide-card-parent::-webkit-scrollbar {
+    display: none;
+}
+
+.slide-item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 1.5em;
+    align-items: center;
+}
+
+.slide-item img{
+    width: 4vw;
+    height: 100%;
+    padding: 1em;
+}
+
+.slide-item span{
+    position: relative;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    padding: 0 1em;
+    font-family: 'PT Sans', sans-serif;
+}
+/*-----------------------------products section ------------------------------------*/
+.product-grid{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    padding: 1em 1em 1em 0;
+}
+.product-grid::-webkit-scrollbar{
+    display: none;
+}
+
+.product-grid-head button{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a1b7ca;
+    color: rgb(233, 97, 37);
+    background-color: white;
+    padding: 0.4rem;
+    border-radius: 0.2em;
+    font-size: medium;
+}
+
+.product-grid-head span{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+.product-grid-parent{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background-color: white;
+    margin: 1em 0;
+}
+.product-grid-parent button{
+    float: right;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+    background-color: white;
+    box-shadow: 0 5px 10px #a1b7ca;
+    padding: 3em;
+    width: fit-content;
+}
+
+.product span{
+    font-family: Corbel, sans-serif;
+    padding: 0.4em;
+}
+
+.product span:nth-child(2){
+    font-weight: 600;
+    font-size: 1.6em;
+}
+.product span:nth-child(3){
+    font-size: 1.2em;
+    color: gray;
+    font-weight: 400;
+}
+.product div img{
+    width:10vw;
+    height: auto;
+}
+.product button{
+    background-color: rgb(233, 97, 37);
+    color: white;
+    border-style: none;
+    padding: 0.6em;
+    position: relative;
+    margin-right: 1.6em;
+    margin-top: 0.5em;
+    font-size: medium;
+    width: 100%;
+    text-transform: uppercase;
+}
+.add{
+    margin:0;
+    background-color: rgb(191, 80, 31);
+    color: white;
+    width: auto;
+    height: auto;
+    padding : 0.6em;
+    position: absolute;
+    top:0;
+    left:100%;
+    font-weight: bolder;
+    font-size: medium;
+}
+/*----------------------------- products section ENDS ------------------------------------*/
+
+
+/*----------------------------- promo-section --------------------------------------------*/
+
+.promo-section{
+    background-color: white;
+    display: block;
+    padding: 1em;
+    margin: 1em auto;
+    align-content: center;
+
+}
+.promo-section span{
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 1em;
+}
+.promo-box{
+    margin: 1em 1em;
+    display: inline-block;
+    align-content: center;
+    border-radius: 0.4em;
+    background-color: rgb(233, 97, 37);
+    padding: 1em;
+    width: 15vw;
+    height: auto;
+    box-shadow: 0 5px 10px #a1b7ca;
+    word-wrap: break-word;
+}
+.promo-box span{
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.promo-cards{
+    display: flex;
+}
+
+/*.promo-box div{*/
+/*    z-index: 4;*/
+/*    position: absolute;*/
+/*    top:90%;*/
+/*    background-color: gray;*/
+/*    width: fit-content;*/
+/*    height: fit-content;*/
+/*    padding: 0 4em;*/
+/*}*/
+
+/*-----------------------------promo-section ENDS --------------------------------------*/
+
+/* -----------------------------offers - section -------------------------------------- */
+
+.offers{
+    display: flex;
+    flex-direction: column;
+}
+
+.off-item{
+    padding : 1em;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.off-img{
+    padding:0.5em;
+    
+}
+
+
+
+
+/*-----------------------------offers-section ENDS -------------------------------------- */
+
+@media screen and (max-width: 1200px){
+    .main-body{
+        padding:0;
+    }
+}
+
+/* @media screen and (max-width: 950px){
+    .promo-cards{
+        flex-direction: column;
+        margin: 1em auto;
+    }
+} */
+/* --------------------------------main body ends-----------------------------------*/
